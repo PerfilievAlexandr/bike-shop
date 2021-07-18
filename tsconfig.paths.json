@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "common/*": ["src/common/*"],
+      "constants/*": ["src/constants/*"],
+      "store/*": ["src/store/*"],
+      "utils/*": ["src/utils/*"],
+      "models/*": ["src/models/*"],
+    }
+  }
+}

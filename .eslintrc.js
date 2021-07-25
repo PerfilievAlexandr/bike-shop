@@ -99,17 +99,22 @@ module.exports = {
         pathGroupsExcludedImportTypes: [''],
         pathGroups: [
           {
-            pattern: '+(express)',
+            pattern: '+(express|pg|connect-pg-simple|passport|passport-local|express-session)',
             group: 'external',
             position: 'before',
           },
           {
-            pattern: '+(common|constants|hooks|utils)/**',
+            pattern: '+(handlers|libs)/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '+(models)/**',
+            pattern: '+(api|repository|models)/**',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '+(constants|config|utils)/**',
             group: 'internal',
             position: 'before',
           },
